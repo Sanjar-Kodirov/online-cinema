@@ -16,11 +16,15 @@ const MenuItem: FC<{ item: IMenuItem }> = ({ item }) => {
 				[styles.active]: asPath === item.link,
 			})}
 		>
-			<Link href={item.link}>{item.title}</Link>
-			<a>
+			<Link href={item.link}>
+				{' '}
 				<MaterialIcon name={item.icon} />
 				<span>{item.title}</span>
-			</a>
+			</Link>
+			{/* <a>
+				<MaterialIcon name={item.icon} />
+				<span>{item.title}</span>
+			</a> */}
 		</li>
 	)
 }

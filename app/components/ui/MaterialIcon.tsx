@@ -5,6 +5,8 @@ import { TypeMaterialIconName } from '@/shared/types/icons.types'
 
 const MaterialIcon: FC<{ name: TypeMaterialIconName }> = ({ name }) => {
 	const IconsComponent = MaterialIcons[name]
+
+	console.log(MaterialIcons)
 	return <IconsComponent /> || <MaterialIcons.MdDragIndicator />
 }
 

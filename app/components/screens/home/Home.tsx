@@ -7,9 +7,9 @@ import { IHome } from './home.interface'
 const Home: FC<IHome> = () => {
 	return (
 		<Layout>
-			<h1>Hello HOme</h1>
+			<h1>Hello Home</h1>
 		</Layout>
 	)
-} 
+}
 
 export default Home
