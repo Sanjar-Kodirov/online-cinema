@@ -1,7 +1,8 @@
 import axios from 'axios'
-import { getGenresUrl } from 'config/api.config'
 
 import { IGenre } from '@/shared/types/movie.types'
+
+import { getGenresUrl } from '@/configs/api.config'
 
 import { axiosClassic } from '@/api/interceptors'
 
@@ -11,7 +12,7 @@ export const GenreService = {
 	// 	return axiosClassic.get<IGenre[]>(getGenresUrl('/popular'))
 	// },
 
-	async getAll(searchTerm?: string) { 
+	async getAll(searchTerm?: string) {
 		return axiosClassic.get<IGenre[]>(getGenresUrl(``), {
 			params: searchTerm
 				? {

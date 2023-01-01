@@ -1,9 +1,10 @@
-import { siteName, titleMerge } from 'config/seo.config'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { FC } from 'react'
 
 import logoImage from '@/assets/images/logo.svg'
+
+import { siteName, titleMerge } from '@/configs/seo.config'
 
 import { onlyText } from '../strings/clearText'
 
