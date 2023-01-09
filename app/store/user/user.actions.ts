@@ -46,7 +46,7 @@ export const logout = createAsyncThunk(
 	async () => await AuthService.logout()
 )
 // checkAuth
-export const checkAuth = createAsyncThunk<IAuthResponse, IEmailPassword>(
+export const checkAuth = createAsyncThunk<IAuthResponse>(
 	'auth/check-auth',
 	async (_, thunkApi) => {
 		try {

@@ -35,7 +35,8 @@ const Meta: FC<ISeo> = ({ title, description, image = null, children }) => {
 					/>
 				</Head>
 			) : (
-				<h1>Hello world</h1>
+				// <h1>Hello world</h1>
+				<span>.</span>
 				// <MetaNoIndex title={title} />
 				// <h1>Hello world</h1>
 			)}
