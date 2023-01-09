@@ -11,11 +11,9 @@ import LogoutButton from './LogoutButton'
 const AuthItems: FC = () => {
 	const { user } = useAuth()
 
-	console.log(user)
-
 	return (
 		<>
-			{user?.email ? (
+			{user ? (
 				<>
 					<MenuItem
 						item={{
