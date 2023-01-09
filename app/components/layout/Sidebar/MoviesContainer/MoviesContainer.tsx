@@ -6,7 +6,7 @@ import PopularMovies from './PopularMovies'
 const MoviesContainer: FC = () => {
 	return (
 		<div>
-			<FavoriteMovies />
+			{/* <FavoriteMovies /> */}
 			<PopularMovies />
 		</div>
 	)

@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import { Provider } from 'react-redux'
 
 import Layout from '@/components/layout/Layout'
@@ -27,9 +28,10 @@ const MainProvider: FC<Props> = ({ children }) => {
 					{' '}
 					<ReduxToastr />
 					<Layout> {children} </Layout>
+					<ReactQueryDevtools initialIsOpen={false} />
 				</QueryClientProvider>
 			</Provider>
-		</HeadProvider>  
+		</HeadProvider>
 	)
 }
 
